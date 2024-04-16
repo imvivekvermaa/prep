@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#left{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
+#left #top{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#left #top #top-left{
+    padding: 25px;
+}
+#left #top #top-left #diamond{
+    width: 20px;
+    height: 20px;
+    rotate: 45deg;
+    background-color: black;
+}
+
+#left #top #top-right h4{
+    padding: 12px;
+    padding-bottom: 15px;
+    text-align: end;
+}
+#left #top #top-right h5{
+    padding-right: 10px;
+    text-align: end;
+}
+
+#left #center{
+    text-transform: capitalize;
+    font-size: 13vh;
+    text-align: center;
+}
+
+#left #center p:nth-child(2n){
+    padding-left: 8vw;
+}
+
+#left #bottom p{
+    font-weight: bold;
+    font-size: 12px;
+    width: 70%;
+    padding: 15px;
+}
+
+#right{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#arrow{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: orangered;
+    top: 50%;
+    left: 48%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
